@@ -1,0 +1,42 @@
+.col-auto,
+.form-label {
+  padding-left: 0;
+}
+.form-label {
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+form .form-group:nth-child(2) .custom-control {
+  margin-right: 8.2rem;
+}
+.custom-control {
+  margin-right: 8rem;
+}
+.custom-control-label {
+  padding-left: 20px;
+}
+.custom-control-label::before {
+  position: absolute;
+  top: 0.18rem;
+  left: -1.45rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  background-color: #fff;
+  border: #adb5bd solid 1px;
+  transform: scale(1.5);
+  transform: translateY(50%) scale(1.5);
+}
+.custom-control-label::after {
+  position: absolute;
+  top: 0.15rem;
+  left: -1.51rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: 50%/50% 50% no-repeat;
+  transform: translateY(50%) scale(1.5);
+}

@@ -1,9 +1,12 @@
-import './App.css';
+import React from "react";
+import WeatherWidget from "./widgets/WeatherWidget"
+import "./App.scss";
+
 
 function App() {
   return (
-    <div className="App">
-
+    <div className="app">
+      <WeatherWidget />
     </div>
   );
 }
