@@ -6,7 +6,7 @@ import Widget from './components/widget/Widget';
 
 
 
-afterEach(cleanup);
+ afterEach(cleanup);
 const mockGeolocation = {
     getCurrentPosition: ((success) => Promise.resolve(success({
         coords: {
@@ -124,12 +124,12 @@ describe("widgets", () => {
 
         it("Click the tempature F button fires off the function and reflect on UI", async () => {
             await act(async () => {
-             axiosMock.get.mockResolvedValueOnce({data: { temperature: 7}})
+             axiosMock.get.mockResolvedValueOnce({data: { temperature: "7"}})
              const cityName = "Sydney";
              const loading = false;
              const error = "";
              const wind = { windSpeed: "30", windDirection: "NE"};
-             const temperature = Math.round(7*1.8+32)
+             const temperature = (Math.round(7*1.8+32)).toString()
              const { queryByTestId } = render(
                 <>
                 <WeatherWidget />

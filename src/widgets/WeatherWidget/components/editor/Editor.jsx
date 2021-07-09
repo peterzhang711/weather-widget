@@ -43,7 +43,6 @@ const Editor = ({
             value={TEMP_DISPLAY_METRIC}
             label="°C"
             defaultChecked
-            custom
             inline
             onChange={handleTempDisplay}
             data-testid="radio_tempC"
@@ -54,7 +53,6 @@ const Editor = ({
             id={`radio_${TEMP_DISPLAY_IMPERIAL}`}
             value={TEMP_DISPLAY_IMPERIAL}
             label="°F"
-            custom
             inline
             onChange={handleTempDisplay}
             data-testid="radio_tempF"
@@ -73,7 +71,6 @@ const Editor = ({
             id={`radio_${SHOW_WIND_ON}`}
             label="On"
             defaultChecked
-            custom
             inline
             onChange={handleShowWind}
             data-testid="radio_windON"
@@ -84,7 +81,6 @@ const Editor = ({
             value={SHOW_WIND_OFF}
             id={`radio_${SHOW_WIND_OFF}`}
             label="Off"
-            custom
             inline
             onChange={handleShowWind}
             data-testid="radio_windOff"
